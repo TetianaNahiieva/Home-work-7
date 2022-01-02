@@ -1,0 +1,124 @@
+$color-white: #FFFFFF;
+$color-gray-blue: #3b3f45;
+$color-gray: #4A4F56;
+$color-pink: #FF8984;
+$color-light-violet: #88839E;
+$color-violet: #7A7593;
+$color-light-gray: #625E77;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1;
+}
+body {
+    background-color: $color-gray-blue;
+    margin: auto;
+    max-width: 793px;
+    min-height: 507px;
+}
+    .header {
+        background-color: $color-gray;
+        width: 793px;
+        height: 82px;
+        text-align: center;
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;   
+            & > h1 {
+                color: $color-pink;
+                font-weight: 700;
+                font-size: 24px;
+                padding-top: 20px;
+                margin-bottom: 5px;
+                align-items: center;
+            }
+            & > p {
+                color: $color-pink;
+                font-weight: 400;
+                font-size:  16px;
+                margin-bottom: 12px;
+                align-items: center;
+            }
+        }
+    }
+    .hero {
+        padding: 20px 0 45px;
+        background-color: $color-gray-blue;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 45px;
+        & > ul {
+            list-style: none;
+            width: 534px;
+            margin: auto;
+            color: $color-white;
+            & > li {
+                max-width: 534px;
+                height: 45px;
+                font-size: 18px;
+                line-height: 21px;
+                text-align: left;
+                background-color: $color-light-violet;
+                color: $color-white;
+                padding: 12px;
+                border-top: 3px solid transparent;
+                border-bottom: 3px solid transparent;
+                &:hover {
+                    background-color: $color-light-gray;
+                    border-top: 3px solid $color-white;
+                    border-bottom: 3px solid $color-white;
+                }
+                &:nth-child(2n) {
+                    background-color: $color-violet;
+                }
+                & > input {
+                    width: 19px;
+                    height: 19px;
+                    margin-right: 16px;
+                } 
+                & > span {
+                    margin-left: 3px;
+                }
+                .check-box:checked + label {
+                    text-decoration: line-through;
+                    background-color: $color-light-gray;
+                }
+            }
+        }
+    }
+    .footer 
+    .footer {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0 45px;
+        background-color: $color-gray;
+        width: 534px;
+        height: 45px;
+        margin: auto;
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & > p {
+                color: $color-pink;
+                font-weight: 107px;
+                font-size:  21px;
+                margin-top: 12px;
+                align-items: center;
+            }
+        }
+    }   
+   
+
+
+
+
+
